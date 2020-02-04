@@ -672,7 +672,7 @@ import quadpy
 
 dim = 4
 scheme = quadpy.ncube.stroud_cn_3_3(dim)
-quadpy.ncube.integrate(
+scheme.integrate(
     lambda x: numpy.exp(x[0]),
     quadpy.ncube.ncube_points(
         [0.0, 1.0], [0.1, 0.9], [-1.0, 1.0], [-1.0, -0.5]
